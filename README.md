@@ -1,4 +1,9 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is a demonstration of the React Hook feature.
+
+## Tutorials Followed
+- [Introducing React Hooks - Traversy Media](https://www.youtube.com/watch?v=mxK8b99iJTg)
+
+- [React Hook Tutorials - Codevolution](https://www.youtube.com/watch?v=cF2lQ_gZeA8&list=PLC3y8-rFHvwisvxhZ135pogtX7_Oe3Q3A&index=1)
 
 ## Available Scripts
 
