@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './App.css';
 import ClassCounter from './components/ClassCounter';
+import HookCounter from './components/HookCounter';
 
 function Todo({ todo, index, completeTodo, removeTodo }) {
     return (
@@ -75,6 +76,7 @@ function App() {
     return (
         <div className="app">
             <div className="todo-list">
+                <h3>Todo List</h3>
                 {todos.map((todo, index) => (
                     <Todo
                         key={index}
@@ -88,6 +90,7 @@ function App() {
             </div>
             <div className="new">
                 <ClassCounter />
+                <HookCounter />
             </div>
         </div>
     );
