@@ -1,7 +1,7 @@
 .app {
     background: #209cee;
     padding: 30px;
-    height: 100vh;
+    height: auto;
 }
 
 .todo-list {
