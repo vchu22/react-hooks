@@ -2,7 +2,7 @@ import React, {useState} from 'react'
 
 function HookCounter(){
      // useState() takes in the init values of the state props, returns a current state and method to set state
-    let [count, setCount] = useState(0)
+    const [count, setCount] = useState(0)
     return (
         <div>
             <h3>Hook Counter</h3>

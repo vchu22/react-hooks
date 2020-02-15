@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import './App.css';
 import ClassCounter from './components/ClassCounter';
 import HookCounter from './components/HookCounter';
+import HookCounterTwo from './components/HookCounterTwo'
 
 function Todo({ todo, index, completeTodo, removeTodo }) {
     return (
@@ -91,6 +92,7 @@ function App() {
             <div className="new">
                 <ClassCounter />
                 <HookCounter />
+                <HookCounterTwo />
             </div>
         </div>
     );
