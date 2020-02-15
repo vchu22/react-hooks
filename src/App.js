@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './App.css';
+import ClassCounter from './components/ClassCounter';
 
 function Todo({ todo, index, completeTodo, removeTodo }) {
     return (
@@ -84,6 +85,9 @@ function App() {
                     />
                 ))}
                 <TodoForm addTodo={addTodo} />
+            </div>
+            <div className="new">
+                <ClassCounter />
             </div>
         </div>
     );
