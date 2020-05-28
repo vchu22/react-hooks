@@ -11,12 +11,17 @@ function HookMouse() {
 
   useEffect(() => {
     console.log("useEffect called");
-    window.addEventListener("mousedown", logMousePosition);
+    window.addEventListener("mousemove", logMousePosition);
+
+    // effect clean up code (canceling event listener)
+    return () => {
+      console.log("Component unmounting code");
+      window.removeEventListener("mousemove", logMousePosition);
+    };
   }, []); // use empty array to run effect only once without depending on any state
 
   return (
     <div>
-      <h3>Hook Mouse Position</h3>
       <span>
         Hooks X - {x} Y - {y}
       </span>
