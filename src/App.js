@@ -7,6 +7,7 @@ import HookCounterThree from "./components/HookCounterThree";
 import HookCounterFour from "./components/HookCounterFour";
 import UseEffectOne from "./components/UseEffectOne";
 import HookContainer from "./components/MouseContainer";
+import IntervalHookCounter from "./components/IntervalHookCounter";
 
 function Todo({ todo, index, completeTodo, removeTodo }) {
   return (
@@ -101,6 +102,7 @@ function App() {
         <HookCounterFour />
         <UseEffectOne />
         <HookContainer />
+        <IntervalHookCounter />
       </div>
     </div>
   );
