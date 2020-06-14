@@ -3,8 +3,8 @@ import axios from "axios";
 
 function DataFetching() {
   const [post, setPost] = useState([]);
-  const [id, setId] = useState(1);
-  const [idFromButtonClick, setIdFromButtonClick] = useState(1);
+  const [id, setId] = useState(1); // value from input field
+  const [idFromButtonClick, setIdFromButtonClick] = useState(1); // confirmed id after button click
 
   const handleClick = () => {
     setIdFromButtonClick(id);
