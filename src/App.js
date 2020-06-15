@@ -8,10 +8,28 @@ function App() {
   // [values of the states (this.state), functions to update the states (this.setState)]
 
   return (
-    <div className="app">
-      <TodoList />
-      <Old />
-    </div>
+    <Router>
+      <div className="app">
+        <nav>
+          <ul>
+            <li>
+              <Link to="/">Todo List</Link>
+            </li>
+            <li>
+              <Link to="/old">Old Demo</Link>
+            </li>
+          </ul>
+        </nav>
+        <Switch>
+          <Route path="/old">
+            <Old />
+          </Route>
+          <Route path="/">
+            <TodoList />
+          </Route>
+        </Switch>
+      </div>
+    </Router>
   );
 }
 
