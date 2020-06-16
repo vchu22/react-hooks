@@ -3,7 +3,8 @@ import { UserContext, ChannelContext } from "./UseContext";
 
 function ComponentF() {
   return (
-    <div>
+    <div className="component">
+      <h3>Component F</h3>
       <UserContext.Consumer>
         {(user) => {
           return (
