@@ -1,6 +1,7 @@
 import React from "react";
 import CounterOne from "./CounterOne";
 import CounterTwo from "./CounterTwo";
+import CounterThree from "./CounterThree";
 
 function UseReducer() {
   // useReducer: a hook for state management, alternative to useState
@@ -9,6 +10,7 @@ function UseReducer() {
     <div className="new">
       <CounterOne />
       <CounterTwo />
+      <CounterThree />
     </div>
   );
 }
