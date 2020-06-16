@@ -1,9 +1,10 @@
-import React, { useState } from "react";
+import React from "react";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import "./App.css";
 import TodoList from "./todo-components/TodoList";
 import UseState from "./old-components/UseState";
 import UseEffect from "./use-effect-components/UseEffect";
+import UseConext from "./use-context-components/UseContext";
 
 function App() {
   // [values of the states (this.state), functions to update the states (this.setState)]
@@ -22,6 +23,9 @@ function App() {
             <li>
               <Link to="/use-effect">Use Effect</Link>
             </li>
+            <li>
+              <Link to="/use-context">Use Context</Link>
+            </li>
           </ul>
         </nav>
         <Switch>
@@ -30,6 +34,9 @@ function App() {
           </Route>
           <Route path="/use-effect">
             <UseEffect />
+          </Route>
+          <Route path="/use-context">
+            <UseConext />
           </Route>
           <Route path="/">
             <TodoList />
